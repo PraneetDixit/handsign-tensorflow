@@ -21,6 +21,7 @@ import {
 import { Signimage, Signpass } from "../components/handimage"
 
 import About from "../components/about"
+import Chart from "../components/chart"
 import Metatags from "../components/metatags"
 
 // import "../styles/App.css"
