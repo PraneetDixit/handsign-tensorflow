@@ -63,7 +63,7 @@ img {
   transform: scaleX(-1);
   filter: FlipH;
   top: 12.5%;
-  left: 20%
+  left: 20%;
   z-index: 9;
 }
 
