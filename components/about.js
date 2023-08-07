@@ -35,8 +35,10 @@ export default function About() {
               This AI model is trained on a dataset of American Sign Language hand-gestures. The ASL is widely used across the globe for communication.
               <br></br>
               This project uses the TensorflowJS library as a machine learning framework and detects the hand-gestures from the webcam.
-            </Text><Text fontSize="sm">
-              Project made by
+            </Text>
+            <Text fontSize="sm">
+              <br></br>
+              Project made by &nbsp;
               <Link
                 href="https://praneetdixit.me/"
                 isExternal
