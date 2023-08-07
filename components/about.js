@@ -27,24 +27,22 @@ export default function About() {
       <Modal onClose={onClose} isOpen={isOpen} isCentered>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>American Sign Language (ASL)</ModalHeader>
+          <ModalHeader>Sign Language Recognition</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             <Text fontSize="sm">
-              American Sign Language (ASL) is a visual language that serves as
-              the predominant sign language of Deaf communities in the United
-              States and most of Canada.<br></br>
-              Here's the list of ASL hand gestures for alphabet.
-            </Text>
-            <Image src={handImages} />
-            <Text fontSize="sm">
-              This sign language illustration is created by{" "}
+              This project is an effort to use AI to facilitate verbally impaired people with communication by recognizing their hand-gestures.
+              This AI model is trained on a dataset of American Sign Language hand-gestures. The ASL is widely used across the globe for communication.
+              <br>
+              This project uses the TensorflowJS library as a machine learning framework and detects the hand-gestures from the webcam.
+            </Text><Text fontSize="sm">
+              Project made by
               <Link
-                href="https://thenounproject.com/pelodrome/"
+                href="https://praneetdixit.me/"
                 isExternal
                 color="orange.300"
               >
-                Pelin Kahraman
+                Praneet Dixit
               </Link>
             </Text>
           </ModalBody>
