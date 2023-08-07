@@ -306,6 +306,7 @@ export default function Home() {
             Camera
           </Button>
           <About />
+          <Chart />
         </Stack>
       </Box>
     </ChakraProvider>
