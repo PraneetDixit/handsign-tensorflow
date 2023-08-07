@@ -213,7 +213,7 @@ export default function Home() {
   return (
     <ChakraProvider>
       <Metatags />
-      <Box bgColor="#5784BA">
+      <Box bgColor="#61a9fe">
         <Container centerContent maxW="xl" height="100vh" pt="0" pb="0">
           <VStack spacing={4} align="center">
             <Box h="20px"></Box>
