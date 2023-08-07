@@ -151,7 +151,7 @@ export default function Home() {
           ) {
             _signList()
             gamestate = "played"
-            document.getElementById("emojimage").classList.add("play")
+            // document.getElementById("emojimage").classList.add("play")
             // document.querySelector(".tutor-text").innerText =
             //   "make a hand gesture based on letter shown below"
           } else if (gamestate === "played") {
@@ -172,9 +172,9 @@ export default function Home() {
               typeof signList[currentSign].src.src === "string" ||
               signList[currentSign].src.src instanceof String
             ) {
-              document
-                .getElementById("emojimage")
-                .setAttribute("src", signList[currentSign].src.src)
+              // document
+              //   .getElementById("emojimage")
+              //   .setAttribute("src", signList[currentSign].src.src)
               if (
                 signList[currentSign].alt ===
                 estimatedGestures.gestures[maxConfidence].name
@@ -266,7 +266,8 @@ export default function Home() {
                       : "/loveyou_emoji.svg"
                   }
                   style={{
-                    height: 30,
+                    height: 50,
+                    marginBottom: 50
                   }}
                 />
               </div>
@@ -287,7 +288,6 @@ export default function Home() {
             }}
           ></Box>
 
-          <Image h="150px" objectFit="cover" id="emojimage" />
           {/* <pre className="pose-data" color="white" style={{position: 'fixed', top: '150px', left: '10px'}} >Pose data</pre> */}
         </Container>
 
