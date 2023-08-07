@@ -59,18 +59,18 @@ export default function Home() {
     signList = generateSigns()
   }
 
-  // function shuffle(a) {
-  //   for (let i = a.length - 1; i > 0; i--) {
-  //     const j = Math.floor(Math.random() * (i + 1))
-  //     ;[a[i], a[j]] = [a[j], a[i]]
-  //   }
-  //   return a
-  // }
+  function shuffle(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1))
+      ;[a[i], a[j]] = [a[j], a[i]]
+    }
+    return a
+  }
 
-  // function generateSigns() {
-  //   const password = shuffle(Signpass)
-  //   return password
-  // }
+  function generateSigns() {
+    const password = shuffle(Signpass)
+    return password
+  }
 
   async function detect(net) {
     // Check data is available
@@ -130,10 +130,10 @@ export default function Home() {
         const estimatedGestures = await GE.estimate(hand[0].landmarks, 6.5)
         // document.querySelector('.pose-data').innerHTML =JSON.stringify(estimatedGestures.poseData, null, 2);
 
-        // if (gamestate === "started") {
-        //   document.querySelector("#app-title").innerText =
-        //     "Make a 👍 gesture with your hand to start"
-        // }
+        if (gamestate === "started") {
+          // document.querySelector("#app-title").innerText =
+          //   "Make a 👍 gesture with your hand to start"
+        }
 
         if (
           estimatedGestures.gestures !== undefined &&
@@ -145,17 +145,17 @@ export default function Home() {
           )
 
           //setting up game state, looking for thumb emoji
-          // if (
-          //   estimatedGestures.gestures[maxConfidence].name === "thumbs_up" &&
-          //   gamestate !== "played"
-          // ) {
-          //   _signList()
-          //   gamestate = "played"
-          //   document.getElementById("emojimage").classList.add("play")
-          //   document.querySelector(".tutor-text").innerText =
-          //     "make a hand gesture based on letter shown below"
-          // } else if (gamestate === "played") {
-          //   document.querySelector("#app-title").innerText = ""
+          if (
+            estimatedGestures.gestures[maxConfidence].name === "thumbs_up" &&
+            gamestate !== "played"
+          ) {
+            _signList()
+            gamestate = "played"
+            document.getElementById("emojimage").classList.add("play")
+            // document.querySelector(".tutor-text").innerText =
+            //   "make a hand gesture based on letter shown below"
+          } else if (gamestate === "played") {
+            // document.querySelector("#app-title").innerText = ""
 
             //looping the sign list
             if (currentSign === signList.length) {
