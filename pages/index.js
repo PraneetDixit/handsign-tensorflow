@@ -157,12 +157,12 @@ export default function Home() {
           // } else if (gamestate === "played") {
           //   document.querySelector("#app-title").innerText = ""
 
-          //   //looping the sign list
-          //   if (currentSign === signList.length) {
-          //     _signList()
-          //     currentSign = 0
-          //     return
-          //   }
+            //looping the sign list
+            if (currentSign === signList.length) {
+              _signList()
+              currentSign = 0
+              return
+            }
 
             // console.log(signList[currentSign].src.src)
 
@@ -183,9 +183,9 @@ export default function Home() {
               }
               setSign(estimatedGestures.gestures[maxConfidence].name)
             }
-          }// else if (gamestate === "finished") {
-            //return
-          //}
+          } else if (gamestate === "finished") {
+            return
+          }
         }
       }
       // Draw hand lines
