@@ -33,7 +33,7 @@ export default function About() {
             <Text fontSize="sm">
               This project is an effort to use AI to facilitate verbally impaired people with communication by recognizing their hand-gestures.
               This AI model is trained on a dataset of American Sign Language hand-gestures. The ASL is widely used across the globe for communication.
-              <br>
+              <br></br>
               This project uses the TensorflowJS library as a machine learning framework and detects the hand-gestures from the webcam.
             </Text><Text fontSize="sm">
               Project made by
