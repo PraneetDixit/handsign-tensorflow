@@ -48,11 +48,11 @@ img {
   top: 12.5%;
   left: 20%;
   border-radius: 16px;
+  box-shadow: 0 0 10px 0px rgb(41 41 41 / 51%);
 }
 
 #gesture-canvas {
   position: fixed;
-  box-shadow: 0 0 10px 0px rgb(41 41 41 / 51%);
   /* top:0;
   left:0;
   right: 0;
@@ -107,7 +107,7 @@ img {
   /* box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2); */
   position: fixed;
   bottom: 30px;
-  left: calc(50% - 150px);
+  left: calc(50% - 200px);
   z-index: 10;
 }
 
